@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="./main.js" defer></script>
 </head>
+
 <body class="bg-gray-200 flex flex-col items-center justify-center h-screen gap-4">
     <h1 class="text-2xl">Listas de Produtos</h1>
-    <input 
-        type="text"
-        placeholder="Digite o nome do Produto" 
-        class="border-1 px-4 py-2 rounded-xl"
-        id="produto"
-    >
+    <input type="text" placeholder="Código" class="border-1 px-4 py-2 rounded-xl" id="codigo">
 
-    <button 
-        class="bg-blue-500 text-white px-4 py-2 rounded-xl border-2 hover:bg-blue-700" 
-        onclick="adicionarProduto()"
-    >ADICIONAR</button>
-    <div 
-        id="listaDeProduto"
-        class="flex flex-col gap-2"
-    ></div>
+    <input type="text" placeholder="Produto" class="border-1 px-4 py-2 rounded-xl" id="produto">
+
+    <input type="number" placeholder="Quantidade" class="border-1 px-4 py-2 rounded-xl" id="quantidade">
+
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-xl border-2 hover:bg-blue-700"
+        onclick="adicionarProduto()">ADICIONAR</button>
+
+    <div id="listaDeProduto" class="flex flex-col gap-2"></div>
+
 </body>
+
 </html>
