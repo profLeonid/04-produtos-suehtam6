@@ -9,18 +9,21 @@
     <script src="./main.js" defer></script>
 </head>
 
-<body class="bg-gray-200 flex flex-col items-center justify-center h-screen gap-4">
-    <h1 class="text-2xl">Listas de Produtos</h1>
-    <input type="text" placeholder="Código" class="border-1 px-4 py-2 rounded-xl" id="codigo">
+<body class="bg-gray-400 flex flex-col items-center justify-center h-screen gap-4">
+   <h1 class="text-2xl underline underline-offset-4">
+  Listas de Produtos
+</h1>
+    <input type="text" placeholder="Código" class="border-1 px-4 py-2 rounded-xl bg-red-200 hover:bg-red-400" id="codigo">
 
-    <input type="text" placeholder="Produto" class="border-1 px-4 py-2 rounded-xl" id="produto">
+    <input type="text" placeholder="Produto" class="border-1 px-4 py-2 rounded-xl bg-blue-200 hover:bg-blue-400" id="produto">
 
-    <input type="number" placeholder="Quantidade" class="border-1 px-4 py-2 rounded-xl" id="quantidade">
+    <input type="number" placeholder="Quantidade" class="border-1 px-4 py-2 rounded-xl bg-green-200 hover:bg-green-400" id="quantidade">
 
-    <button class="bg-blue-500 text-white px-4 py-2 rounded-xl border-2 hover:bg-blue-700"
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-xl border-3 hover:bg-blue-700 hover:text-black"
         onclick="adicionarProduto()">ADICIONAR</button>
-
-    <div id="listaDeProduto" class="flex flex-col gap-2"></div>
+    
+    <div id="listaDeProduto" class="grid grid-cols-3 text-center gap-3"></div>
+    
 
 </body>
 
